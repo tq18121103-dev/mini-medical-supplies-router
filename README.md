@@ -1,13 +1,12 @@
-````md
-# Mini Medical Supplies Routing App
+# PHP Mini Medical Supplies Router
 
-Mini PHP application using Front Controller, Router and Standard Response.
+Mini Medical Supplies Routing App built with PHP Front Controller, Router and Standard Response.
 
 ## Features
 
-- Home page HTML response
+- Home page
 - Health check JSON response
-- Medical supplies list page
+- Medical supplies list
 - Create supply form
 - Login demo form
 - Redirect response
@@ -34,7 +33,7 @@ Mini PHP application using Front Controller, Router and Standard Response.
 public/
 src/
 views/
-````
+```
 
 ## Run Project
 
@@ -43,19 +42,23 @@ composer dump-autoload
 php -S localhost:8000 -t public public/index.php
 ```
 
-## Test
-
-Open browser:
+## Test URLs
 
 ```text
 http://localhost:8000
+http://localhost:8000/health
+http://localhost:8000/supplies
+http://localhost:8000/supplies/create
+http://localhost:8000/login
 ```
 
-Or test using curl:
+## HTTP Status Codes
 
-```bash
-curl -i http://localhost:8000/health
-```
+- 200 OK
+- 302 Found
+- 404 Not Found
+- 405 Method Not Allowed
 
-```
-```
+## Author
+
+Quynh Ngo
